@@ -2,9 +2,9 @@
 
 ## Readings
 
-https://github.com/airbnb/javascript
-https://www.w3schools.com/js/js_conventions.asp
-https://standardjs.com/rules.html
+- https://www.npmjs.com/package/standard
+- https://github.com/airbnb/javascript
+- https://www.w3schools.com/js/js_conventions.asp
 
 ## To Be Added
 

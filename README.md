@@ -1,4 +1,4 @@
-# JavaScript Style Guide
+# JavaScript Code Style Guide
 
 ## Readings
 

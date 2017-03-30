@@ -2,9 +2,11 @@
 
 ## Readings
 
-- https://www.npmjs.com/package/standard
-- https://github.com/airbnb/javascript
-- https://www.w3schools.com/js/js_conventions.asp
+- https://www.npmjs.com/package/standard (JavaScript Standard Style)
+- https://github.com/airbnb/javascript (AirBnb Style Guide [ES6]  - platform)
+- https://github.com/airbnb/javascript/tree/es5-deprecated/es5 (AirBnb Style Guide [ES5] - for editor + SDK)
+- https://www.w3schools.com/js/js_conventions.asp (W3 Style Guide)
+- http://kangax.github.io/compat-table/es5/ (browser compatibility table)
 
 ## To Be Added
 

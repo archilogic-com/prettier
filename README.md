@@ -8,6 +8,10 @@
 - https://www.w3schools.com/js/js_conventions.asp (W3 Style Guide)
 - http://kangax.github.io/compat-table/es5/ (browser compatibility table)
 
+### Performance
+
+- https://github.com/petkaantonov/bluebird/wiki/Optimization-killers
+
 ## To Be Added
 
 - Module API definition patterns

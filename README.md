@@ -18,7 +18,7 @@
 
 ## To Be Added
 
-- Module API definition patterns
+- Module API patterns
 - Object creation patterns considering private / public properties and methods
 - Readability guidelines
 - Performance optimized code patterns

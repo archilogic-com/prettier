@@ -1,5 +1,9 @@
 # JavaScript Code Style Guide
 
+## Code Style
+* [Auto-format code in webstorm](auto-format-code-webstorm.md)
+* https://standardjs.com/
+
 ## Readings
 
 - https://www.npmjs.com/package/standard (JavaScript Standard Style)

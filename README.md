@@ -16,7 +16,7 @@ This can make the code-review process easier, and can make it easier to rollback
 
 #### Autoformatting
 
-We recommend using [prettier](https://prettier.io) for automatting with the following default settings  
+We recommend using [prettier](https://prettier.io) for auto-formatting with the following default settings  
 
 ```
 {

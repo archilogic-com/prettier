@@ -1,27 +1,23 @@
 # JavaScript Code Style Guide
 
-## Code Style
-* [Auto-format code in webstorm](auto-format-code-webstorm.md)
-* https://standardjs.com/
+This guide is a set of suggestions rather than rules to enforce across all projects
 
-## Readings
+#### Formatting based on [StandardJS](https://standardjs.com/)
 
-- https://www.npmjs.com/package/standard (JavaScript Standard Style)
-- https://github.com/airbnb/javascript (AirBnb Style Guide [ES6]  - platform)
-- https://github.com/airbnb/javascript/tree/es5-deprecated/es5 (AirBnb Style Guide [ES5] - for editor + SDK)
-- https://www.w3schools.com/js/js_conventions.asp (W3 Style Guide)
-- http://kangax.github.io/compat-table/es5/ (browser compatibility table)
+- 2 spaces for indentation
+- No semi-colons (but be aware of the [edgecases](https://standardjs.com/rules.html#semicolons))  
+- Single quotes for strings
 
-### Performance
+#### Autoformatting
 
-- https://github.com/petkaantonov/bluebird/wiki/Optimization-killers
+Recommended [prettier](https://prettier.io) settings:
 
-## To Be Added
-
-- Module API patterns
-- Object creation patterns considering private / public properties and methods
-- Readability guidelines
-- Performance optimized code patterns
-- Dos and Dont's - examples & learnings
-- JSHint
-- JSLint
+```
+{
+  "printWidth": 100, 
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  `"htmlWhitespaceSensitivity": "ignore"
+}
+```

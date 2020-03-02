@@ -18,6 +18,6 @@ Recommended [prettier](https://prettier.io) settings:
   "semi": false,
   "singleQuote": true,
   "tabWidth": 2,
-  `"htmlWhitespaceSensitivity": "ignore"
+  "htmlWhitespaceSensitivity": "ignore"
 }
 ```

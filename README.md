@@ -18,6 +18,9 @@ Recommended [prettier](https://prettier.io) settings:
   "semi": false,
   "singleQuote": true,
   "tabWidth": 2,
-  "htmlWhitespaceSensitivity": "ignore"
+  "jsxBracketSameLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "trailingComma": "none",
+  "arrowParens": "avoid"
 }
 ```

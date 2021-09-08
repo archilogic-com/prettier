@@ -4,5 +4,5 @@
   "description": "Archilogic's shared Prettier config",
   "private": true,
   "main": "prettier.json",
-  "repository": "git@github.com:archilogic-com/js-guide.git"
+  "repository": "git@github.com:archilogic-com/prettier.git"
 }

@@ -1,26 +1,50 @@
-# JavaScript Code Style Guide
+# Archilogic's shared [Prettier](https://prettier.io) configuration
 
-This guide is a set of suggestions rather than rules to enforce across all projects
+## Using this config
 
-#### Formatting based on [StandardJS](https://standardjs.com/)
+To use the shared Prettier config in your project, add this package as a dependency:
 
-- 2 spaces for indentation
-- No semi-colons (but be aware of the [edgecases](https://standardjs.com/rules.html#semicolons))  
-- Single quotes for strings
+`npm i -D github:archilogic-com/prettier`
 
-#### Autoformatting
-
-Recommended [prettier](https://prettier.io) settings:
+Then, add a `prettier` option to your `package.json`:
 
 ```
 {
-  "printWidth": 100, 
-  "semi": false,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "jsxBracketSameLine": true,
-  "htmlWhitespaceSensitivity": "ignore",
-  "trailingComma": "none",
-  "arrowParens": "avoid"
+  "name": "ui-components",
+  "version": "9000.0.1",
+  "scripts": {...},
+  "prettier": "@archilogic-com/prettier"
 }
 ```
+
+or create a `.prettierrc.json` file with the following line:
+```
+"@archilogic-com/prettier"
+```
+
+## Recommended settings
+
+Recommended [Prettier settings](prettier.json) in this config are based on [StandardJS](https://standardjs.com/):
+
+- 2 spaces for indentation
+- No semi-colons (Prettier takes care of the [edgecases](https://standardjs.com/rules.html#semicolons))
+- Single quotes for strings
+
+If you need to extend the configuration or overwrite some of its settings, import the file in a `.prettierrc.js` file and export the modifications, e.g:
+```
+module.exports = {
+  ...require("@company/prettier-config"),
+  semi: false,
+};
+```
+
+### Editor Integration
+It is recommended that you set up your editor to automatically format the code as you go.
+See [editor integration docs](https://prettier.io/docs/en/editors.html).
+
+### Formatting on commit
+To enforce Prettier formatting in a project, you can configure it to run as a pre-commit hook.
+See [pre-commits docs](https://prettier.io/docs/en/precommit.html) (Option 1 recommended).
+
+
+

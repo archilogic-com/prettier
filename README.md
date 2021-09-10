@@ -2,9 +2,9 @@
 
 ## Using this config
 
-To use the shared Prettier config in your project, add this package as a dependency:
+To use the shared Prettier config in your project, add this package as a dev dependency (along with Prettier itself):
 
-`npm i -D github:archilogic-com/prettier`
+`npm i -D prettier github:archilogic-com/prettier`
 
 Then, add a `prettier` option to your `package.json`:
 
@@ -22,6 +22,26 @@ or create a `.prettierrc.json` file with the following line:
 "@archilogic-com/prettier"
 ```
 
+### Adding a format script
+
+To format all your files, run `npx prettier --write .`.
+Or add a script to `package.json`
+```
+"scripts": {
+  "format": "npm run prettier --write ."
+}
+```
+
+### Formatting on commit (recommended)
+
+To enforce Prettier formatting in a project, you can configure it to run as a pre-commit hook.
+See [pre-commits docs](https://prettier.io/docs/en/precommit.html) (Option 1 recommended).
+
+### Editor Integration
+
+It is recommended that you set up your editor to automatically format the code as you go.
+See [editor integration docs](https://prettier.io/docs/en/editors.html).
+
 ## Recommended settings
 
 Recommended [Prettier settings](prettier.json) in this config are based on [StandardJS](https://standardjs.com/):
@@ -38,13 +58,7 @@ module.exports = {
 };
 ```
 
-### Editor Integration
-It is recommended that you set up your editor to automatically format the code as you go.
-See [editor integration docs](https://prettier.io/docs/en/editors.html).
 
-### Formatting on commit
-To enforce Prettier formatting in a project, you can configure it to run as a pre-commit hook.
-See [pre-commits docs](https://prettier.io/docs/en/precommit.html) (Option 1 recommended).
 
 
 

@@ -28,7 +28,7 @@ To format all your files, run `npx prettier --write .`.
 Or add a script to `package.json`
 ```
 "scripts": {
-  "format": "npm run prettier --write ."
+  "format": "prettier --write ."
 }
 ```
 

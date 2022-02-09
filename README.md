@@ -4,7 +4,7 @@
 
 To use the shared Prettier config in your project, add this package as a dev dependency (along with Prettier itself):
 
-`npm i -D prettier github:archilogic-com/prettier`
+`npm i -D prettier @archilogic/prettier`
 
 Then, add a `prettier` option to your `package.json`:
 
@@ -13,19 +13,21 @@ Then, add a `prettier` option to your `package.json`:
   "name": "ui-components",
   "version": "9000.0.1",
   "scripts": {...},
-  "prettier": "@archilogic-com/prettier"
+  "prettier": "@archilogic/prettier"
 }
 ```
 
 or create a `.prettierrc.json` file with the following line:
+
 ```
-"@archilogic-com/prettier"
+"@archilogic/prettier"
 ```
 
 ### Adding a format script
 
 To format all your files, run `npx prettier --write .`.
 Or add a script to `package.json`
+
 ```
 "scripts": {
   "format": "prettier --write ."
@@ -51,14 +53,10 @@ Recommended [Prettier settings](prettier.json) in this config are based on [Stan
 - Single quotes for strings
 
 If you need to extend the configuration or overwrite some of its settings, import the file in a `.prettierrc.js` file and export the modifications, e.g:
+
 ```
 module.exports = {
   ...require("@company/prettier-config"),
   semi: false,
 };
 ```
-
-
-
-
-

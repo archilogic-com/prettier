@@ -1,5 +1,5 @@
 {
-  "name": "@archilogic-ci/prettier",
+  "name": "@archilogic/prettier",
   "version": "0.0.0-development",
   "description": "Archilogic's shared Prettier config",
   "main": "prettier.json",

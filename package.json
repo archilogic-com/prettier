@@ -1,8 +1,16 @@
 {
-  "name": "@archilogic-com/prettier",
-  "version": "1.0.0",
+  "name": "@archilogic/prettier",
+  "version": "0.0.0-development",
   "description": "Archilogic's shared Prettier config",
-  "private": true,
   "main": "prettier.json",
-  "repository": "git@github.com:archilogic-com/prettier.git"
+  "repository": "git@github.com:archilogic-com/prettier.git",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

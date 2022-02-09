@@ -4,7 +4,7 @@ on:
     branches: [semantic-release]
 jobs:
   release:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -13,4 +13,5 @@ jobs:
       - name: Release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release

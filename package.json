@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "semantic-release": "^19.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
